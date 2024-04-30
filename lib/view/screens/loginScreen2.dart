@@ -8,7 +8,7 @@ import 'forget_pass.dart';
 import 'package:care_brecelet/view/screens/login_patient_guardian.dart';
 
 class loginScreen2 extends StatelessWidget {
-  static const String routeName = 'loginSC';
+  static const String routeName = 'loginSC22';
   const loginScreen2({super.key});
 
   @override

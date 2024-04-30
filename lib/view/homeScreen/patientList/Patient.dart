@@ -11,7 +11,8 @@ class Patient extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFDAD1f4),
+      // backgroundColor: Colors.white,
       body: Column(
         children: [
           SizedBox(height: 30,),

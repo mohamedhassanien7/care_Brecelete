@@ -1,7 +1,3 @@
-// import 'package:care_bracelet/login_patient_guardian.dart';
-// import 'package:care_bracelet/model/RegisterScreen.dart';
-// import 'package:care_bracelet/model/loginScreen.dart';
-// import 'package:care_bracelet/splashScreen.dart';
 import 'package:care_brecelet/view/homeScreen/HomeScreen.dart';
 import 'package:care_brecelet/view/homeScreen/patientInfo.dart';
 import 'package:care_brecelet/view/homeScreen/patient_details.dart';
@@ -92,7 +88,7 @@ class MyApp extends StatelessWidget {
           return PatientDetails(patientName: patientName);
         },
       },
-      initialRoute: SplashScreen.routeName,
+      initialRoute: HomeScreen3.routeName,
     );
   }
 }

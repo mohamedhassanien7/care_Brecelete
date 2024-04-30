@@ -21,9 +21,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFDAD1F4),
+      // backgroundColor: Colors.white,
       drawer: HomeDrawer(onMenuItemClick),
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       body: selectedWidget,
 
       // Column(

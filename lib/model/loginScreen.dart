@@ -6,7 +6,7 @@ import '../view/screens/forget_pass.dart';
 import 'RegisterScreen.dart';
 
 class loginScreen extends StatelessWidget {
-  static const String routeName = 'loginSC';
+  static const String routeName = 'loginDoctor';
   const loginScreen({super.key});
 
   @override

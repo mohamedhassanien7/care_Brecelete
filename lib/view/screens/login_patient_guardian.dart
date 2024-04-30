@@ -5,7 +5,7 @@ import 'package:care_brecelet/view/widgets/customTextField.dart';
 import 'package:flutter/material.dart';
 
 class login_patient_guardian extends StatelessWidget {
-  static const String routeName = 'LoginPatient2';
+  static const String routeName = 'LoginPatient22';
    const login_patient_guardian({super.key});
 
   @override
