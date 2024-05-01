@@ -1,6 +1,6 @@
 import 'dart:ui';
-import 'package:care_brecelet/view/screens/login_patient_guardian.dart';
-import 'package:care_brecelet/view/screens/verify_code3.dart';
+import 'package:care_brecelet/view/LoginPatient/login_patient_guardian.dart';
+import 'package:care_brecelet/view/LoginGuardian/verify_code3.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import '../widgets/customTextField.dart';

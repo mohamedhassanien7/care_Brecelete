@@ -1,6 +1,6 @@
-import 'package:care_brecelet/view/screens/loginScreen2.dart';
+import 'package:care_brecelet/view/LoginPatient/loginScreen2.dart';
 import 'package:care_brecelet/view/screens/verify_code.dart';
-import 'package:care_brecelet/view/screens/verify_code2.dart';
+import 'package:care_brecelet/view/LoginPatient/verify_code2.dart';
 import 'package:care_brecelet/view/widgets/customTextField.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +33,7 @@ class login_patient_guardian extends StatelessWidget {
                   children: [
                     Text(
                       "Basic Data",
-                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.white),
+                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.black),
                     ),
                   ],
                 ),

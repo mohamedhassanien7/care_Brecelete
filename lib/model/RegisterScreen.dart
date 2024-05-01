@@ -2,9 +2,10 @@
 // import 'package:care_bracelet/model/loginScreen.dart';
 import 'package:care_brecelet/view/screens/QrPage.dart';
 import 'package:care_brecelet/view/screens/generate_qrcode.dart';
-import 'package:care_brecelet/view/screens/loginScreen2.dart';
+import 'package:care_brecelet/view/LoginPatient/loginScreen2.dart';
+import 'package:care_brecelet/view/LoginGuardian/loginScreen3.dart';
 import 'package:flutter/material.dart';
-import 'package:care_brecelet/view/screens/login_patient_guardian.dart';
+import 'package:care_brecelet/view/LoginPatient/login_patient_guardian.dart';
 import 'package:care_brecelet/model/loginScreen.dart';
 
 import '../view/screens/LoginDoctor.dart';
@@ -120,7 +121,7 @@ class RegisterScreen extends StatelessWidget {
                                   children: [
                                     InkWell(
                                       onTap: (){
-                                        Navigator.of(context).pushNamed(QrPage.routeName);
+                                        Navigator.of(context).pushNamed(loginScreen3.routeName);
                                       },
                                       child: Container(
                                         width: 300,

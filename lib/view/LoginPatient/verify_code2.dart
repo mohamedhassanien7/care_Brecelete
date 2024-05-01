@@ -1,17 +1,18 @@
 import 'package:care_brecelet/myTheme/my_theme.dart';
+import 'package:care_brecelet/view/homeScreen/HomeScreen.dart';
+import 'package:care_brecelet/view/homeScreen2/HomeScreen2.dart';
 import 'package:care_brecelet/view/screens/photo2_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:care_brecelet/view/LoginPatient/loginScreen2.dart';
 
-import '../homeScreen3/HomeScreen3.dart';
-
-class VerifYCode3 extends StatefulWidget {
-  static const String routeName='verify3';
+class VerifYCode2 extends StatefulWidget {
+  static const String routeName='verify2';
 
   @override
-  State<VerifYCode3> createState() => _VerifYCodeState();
+  State<VerifYCode2> createState() => _VerifYCodeState();
 }
 
-class _VerifYCodeState extends State<VerifYCode3> {
+class _VerifYCodeState extends State<VerifYCode2> {
   TextEditingController num1 = TextEditingController();
   TextEditingController num2 = TextEditingController();
   TextEditingController num3 = TextEditingController();
@@ -254,7 +255,7 @@ class _VerifYCodeState extends State<VerifYCode3> {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF9177DC)),
                         onPressed: (){
-                          Navigator.of(context).pushNamed(HomeScreen3.routeName);
+                          Navigator.of(context).pushNamed(loginScreen2.routeName);
                         },
                         child: Text("Confirm", style: TextStyle(color: Colors.white, fontSize: 24),)),
                   ),

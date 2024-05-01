@@ -1,16 +1,18 @@
 import 'package:care_brecelet/view/homeScreen/HomeScreen.dart';
+import 'package:care_brecelet/view/homeScreen3/HomeScreen3.dart';
 import 'package:flutter/material.dart';
+import '../../model/RegisterScreen.dart';
+import '../screens/QrPage.dart';
+import '../screens/forget_pass.dart';
+import 'login_Guardian.dart';
+import 'package:care_brecelet/view/LoginGuardian/loginGard.dart';
 
-import '../view/screens/LoginDoctor.dart';
-import '../view/screens/forget_pass.dart';
-import 'RegisterScreen.dart';
-
-class loginScreen extends StatelessWidget {
-  static const String routeName = 'loginDoctor';
-  const loginScreen({super.key});
+class loginScreen3 extends StatelessWidget {
+  static const String routeName = 'loginSC3';
+  const loginScreen3({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -27,7 +29,7 @@ class loginScreen extends StatelessWidget {
               ],
             ),
             SizedBox(height: 50,),
-            Image.asset('asset/images/doctorr.png', height: 170),
+            Image.asset('asset/images/gard.png', height: 170),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -140,7 +142,7 @@ class loginScreen extends StatelessWidget {
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF9177DC)),
                   onPressed: (){
-                    Navigator.of(context).pushNamed(HomeScreen.routeName);
+                    Navigator.of(context).pushNamed(QrPage.routeName);
                   },
                   child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 20),)),
             ),
@@ -154,7 +156,7 @@ class loginScreen extends StatelessWidget {
             SizedBox(height: 12,),
             InkWell(
                 onTap: (){
-                  Navigator.of(context).pushNamed(LoginDoctor.routeName);
+                  Navigator.of(context).pushNamed(loginGard.routeName);
                 },
                 child: Text('Don’t have an Account? sign up',style: TextStyle(color: Color(0xFF9177DC)),))
           ],

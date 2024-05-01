@@ -1,18 +1,18 @@
 import 'package:care_brecelet/myTheme/my_theme.dart';
-import 'package:care_brecelet/view/homeScreen/HomeScreen.dart';
-import 'package:care_brecelet/view/homeScreen2/HomeScreen2.dart';
+import 'package:care_brecelet/view/LoginGuardian/loginScreen3.dart';
 import 'package:care_brecelet/view/screens/photo2_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:care_brecelet/view/screens/loginScreen2.dart';
+import '../homeScreen3/HomeScreen3.dart';
+import 'login_Guardian.dart';
 
-class VerifYCode2 extends StatefulWidget {
-  static const String routeName='verify2';
+class VerifYCode3 extends StatefulWidget {
+  static const String routeName='verify3';
 
   @override
-  State<VerifYCode2> createState() => _VerifYCodeState();
+  State<VerifYCode3> createState() => _VerifYCodeState();
 }
 
-class _VerifYCodeState extends State<VerifYCode2> {
+class _VerifYCodeState extends State<VerifYCode3> {
   TextEditingController num1 = TextEditingController();
   TextEditingController num2 = TextEditingController();
   TextEditingController num3 = TextEditingController();
@@ -26,7 +26,7 @@ class _VerifYCodeState extends State<VerifYCode2> {
       appBar: AppBar(
         leading: InkWell(
             onTap: (){
-              Navigator.of(context).pop(FaceRecognition2.routeName);
+              Navigator.of(context).pop(LoginGuardian.routeName);
             },
             child: Icon(Icons.arrow_back)),
       ),
@@ -255,7 +255,7 @@ class _VerifYCodeState extends State<VerifYCode2> {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF9177DC)),
                         onPressed: (){
-                          Navigator.of(context).pushNamed(loginScreen2.routeName);
+                          Navigator.of(context).pushNamed(loginScreen3.routeName);
                         },
                         child: Text("Confirm", style: TextStyle(color: Colors.white, fontSize: 24),)),
                   ),

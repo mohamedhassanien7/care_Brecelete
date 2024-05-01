@@ -3,9 +3,9 @@ import 'package:care_brecelet/view/homeScreen2/HomeScreen2.dart';
 import 'package:care_brecelet/view/homeScreen3/HomeScreen3.dart';
 import 'package:flutter/material.dart';
 import '../../model/RegisterScreen.dart';
-import 'LoginDoctor.dart';
-import 'forget_pass.dart';
-import 'package:care_brecelet/view/screens/login_patient_guardian.dart';
+import '../screens/LoginDoctor.dart';
+import '../screens/forget_pass.dart';
+import 'package:care_brecelet/view/LoginPatient/login_patient_guardian.dart';
 
 class loginScreen2 extends StatelessWidget {
   static const String routeName = 'loginSC22';
@@ -29,7 +29,7 @@ class loginScreen2 extends StatelessWidget {
               ],
             ),
             SizedBox(height: 50,),
-            Image.asset('asset/images/Login.png', height: 170),
+            Image.asset('asset/images/patient.png', height: 170),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

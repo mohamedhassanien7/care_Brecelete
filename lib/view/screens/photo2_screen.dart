@@ -51,10 +51,11 @@ class _FaceRecognition2State extends State<FaceRecognition2> {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Take a photo of the card from the \n front ",style: TextStyle(fontWeight: FontWeight.bold , color: Colors.black , fontSize: 19),),
+                          Text("Take a photo of the card from the \n front ",style: TextStyle(fontWeight: FontWeight.bold , color: Colors.black , fontSize: 17),),
                         ],
                       ),
                     ),
+                    SizedBox(height: 10,),
                     Container(
                       height: 200,
                       width: 230,

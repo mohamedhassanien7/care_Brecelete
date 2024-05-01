@@ -15,16 +15,18 @@ import 'package:care_brecelet/view/screens/forget_pass.dart';
 import 'package:care_brecelet/view/screens/generate_qrcode.dart';
 import 'package:care_brecelet/view/screens/google_maps.dart';
 import 'package:care_brecelet/view/screens/loginForDoctor_2.dart';
-import 'package:care_brecelet/view/screens/loginScreen2.dart';
-import 'package:care_brecelet/view/screens/login_Guardian.dart';
+import 'package:care_brecelet/view/LoginGuardian/loginGard.dart';
+import 'package:care_brecelet/view/LoginPatient/loginScreen2.dart';
+import 'package:care_brecelet/view/LoginGuardian/loginScreen3.dart';
+import 'package:care_brecelet/view/LoginGuardian/login_Guardian.dart';
 import 'package:care_brecelet/view/screens/profile_screen.dart';
 import 'package:care_brecelet/view/screens/search_screen.dart';
 import 'package:care_brecelet/view/screens/splashScreen.dart';
-import 'package:care_brecelet/view/screens/verify_code2.dart';
-import 'package:care_brecelet/view/screens/verify_code3.dart';
+import 'package:care_brecelet/view/LoginPatient/verify_code2.dart';
+import 'package:care_brecelet/view/LoginGuardian/verify_code3.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'view/screens/login_patient_guardian.dart';
+import 'view/LoginPatient/login_patient_guardian.dart';
 import 'model/RegisterScreen.dart';
 import 'model/loginScreen.dart';
 import 'view/screens/photo2_screen.dart';
@@ -55,11 +57,13 @@ class MyApp extends StatelessWidget {
         LoginForDoctor_2.routeName: (_) => LoginForDoctor_2(),
         loginScreen.routeName: (_) => loginScreen(),
         loginScreen2.routeName: (_) => loginScreen2(),
+        loginScreen3.routeName: (_) => loginScreen3(),
         LoginDoctor.routeName: (_) => LoginDoctor(),
+        LoginGuardian.routeName:(_) => LoginGuardian(),
         login_patient_guardian.routeName: (_) => login_patient_guardian(),
         login_patient_guardian_rest.routeName: (_) =>
             login_patient_guardian_rest(),
-        LoginGuardian.routeName: (_) => LoginGuardian(),
+        loginGard.routeName: (_) => loginGard(),
         QrPage.routeName: (_) => QrPage(),
         SplashScreen.routeName: (_) => SplashScreen(),
         FaceRecognition.routeName: (_) => FaceRecognition(),
@@ -88,7 +92,7 @@ class MyApp extends StatelessWidget {
           return PatientDetails(patientName: patientName);
         },
       },
-      initialRoute: HomeScreen3.routeName,
+      initialRoute: SplashScreen.routeName,
     );
   }
 }
