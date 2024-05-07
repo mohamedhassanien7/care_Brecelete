@@ -96,7 +96,7 @@ class HomeDrawer3 extends StatelessWidget {
             SizedBox(height: 30,),
             InkWell(
               onTap: (){
-                onMenuItemClick(MenuItem.signOut);
+                onMenuItemClick(MenuItem.signOut3);
               },
               child: Row(mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -120,6 +120,6 @@ enum MenuItem{
   F_Q,
   deleteAccount,
   privacy,
-  signOut,
+  signOut3,
 }
 

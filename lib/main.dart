@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
           return PatientDetails(patientName: patientName);
         },
       },
-      initialRoute: SplashScreen.routeName,
+      initialRoute: HomeScreen3.routeName,
     );
   }
 }

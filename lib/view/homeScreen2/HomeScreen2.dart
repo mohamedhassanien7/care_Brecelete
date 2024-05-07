@@ -1,4 +1,5 @@
 
+import 'package:care_brecelet/view/homeScreen2/signOut/SignOut.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -62,8 +63,8 @@ class _HomeScreenState2 extends State<HomeScreen2> {
       case MenuItem.privacy : {
         selectedWidget = PrivacyPolicyFragment();
       }
-      case MenuItem.signOut : {
-        selectedWidget= SignOut();
+      case MenuItem.signOut2 : {
+        selectedWidget= SignOut2();
       }
       case MenuItem.complaints : {
         selectedWidget = ComplaintsFragment();

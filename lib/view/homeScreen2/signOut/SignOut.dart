@@ -1,7 +1,10 @@
 import 'package:care_brecelet/model/loginScreen.dart';
+import 'package:care_brecelet/view/LoginPatient/loginScreen2.dart';
 import 'package:flutter/material.dart';
 
-class SignOut extends StatelessWidget {
+class SignOut2 extends StatelessWidget {
+  const SignOut2({super.key});
+
   Future<void> _navigateAfterDelay(BuildContext context) async {
     // Show CircularProgressIndicator
     showDialog(
@@ -20,7 +23,7 @@ class SignOut extends StatelessWidget {
     // Navigate to the next page
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => loginScreen()),
+      MaterialPageRoute(builder: (context) => loginScreen2()),
     );
   }
 
